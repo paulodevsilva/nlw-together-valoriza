@@ -24,7 +24,6 @@ export function ensureAuthenticated(
       '5e2fcc593bf4441c8beb7f34a3431a07'
     ) as IPayload;
     request.user_id = sub;
-    console.log(request.user_id);
 
     return next();
   } catch (err) {
